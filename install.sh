@@ -18,7 +18,7 @@ if [ $? -eq 0 ]; then
             ./createDirectory.sh
         ;;
         2)
-            #create group
+            ./createGroup.sh
         ;;
         3)
             #create user
