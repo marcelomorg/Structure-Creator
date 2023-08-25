@@ -21,13 +21,10 @@ if [ $? -eq 0 ]; then
             ./createGroup.sh
         ;;
         3)
-            #create user
+            ./createUser.sh
         ;;
         4)
             #create predefined structure
         ;;
     esac
-fi
-
-
-    
+fi          
