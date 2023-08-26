@@ -36,11 +36,11 @@ if [ $? -eq 0 -a $validInputChoise -eq 0 ]; then
     elif [ $inputYesOrNo -eq 1 ]; then
         echo -e "$inputPassword\n" | sudo -S useradd  -m -s /bin/bash -p $(openssl passwd -1 Senha123) $inputChoise
     fi
-fi
 
-if [ $? -eq 0 -a $validInputChoise -eq 0 ]; then
-    ./warning.sh "User '$inputChoise' sucessfully created"
-else
-    ./warning.sh "Sorry, user was not created"
+    if [ $? -eq 0 ]; then
+        ./Models/warning.sh "User '$inputChoise' sucessfully created"
+    else
+        ./Models/warning.sh "Sorry, user was not created"
+    fi
 fi
 ./install.sh

@@ -15,13 +15,13 @@ if [ $? -eq 0 ]; then
 
     case "$item" in
         1)
-            ./createDirectory.sh
+            ./Services/createDirectory.sh
         ;;
         2)
-            ./createGroup.sh
+            ./Services/createGroup.sh
         ;;
         3)
-            ./createUser.sh
+            ./Services/createUser.sh
         ;;
         4)
             #create predefined structure
