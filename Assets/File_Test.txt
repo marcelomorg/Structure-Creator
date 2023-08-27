@@ -1,0 +1,9 @@
+echo "Folder and file creating..."
+mkdir FolderTest
+touch FolderTest/file1.json
+touch FolderTest/file2.json
+touch FolderTest/file3.json
+touch FolderTest/file4.json
+touch FolderTest/file5.json
+echo "Checking directory..."
+ls -ltr

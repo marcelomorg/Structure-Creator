@@ -24,7 +24,7 @@ if [ $? -eq 0 ]; then
             ./Services/createUser.sh
         ;;
         4)
-            #create predefined structure
+            ./Services/createPredefined.sh
         ;;
     esac
 fi          
